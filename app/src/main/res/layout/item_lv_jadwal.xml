@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="4dp">
+
+    <com.pkmmte.view.CircularImageView
+        android:id="@+id/image_round"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:src="@drawable/user"
+        app:border="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/nama_dokter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Dokter"
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:id="@+id/jenis_poli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Poli Umum"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:id="@+id/linear_jadwal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/jdwal_dokter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jadwal"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_jadwal"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@android:color/holo_green_dark" />
+
+    </LinearLayout>
+
+</LinearLayout>
